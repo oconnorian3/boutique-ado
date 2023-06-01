@@ -28,7 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-oconnorian3-boutiqueado-ahbeo1k01e8.ws-eu98.gitpod.io']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -78,6 +77,8 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
